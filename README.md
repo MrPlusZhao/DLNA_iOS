@@ -1,2 +1,2 @@
-# DLNA_-_iOS
+# DLNA_iOS
 DLNA_投屏_iOS
