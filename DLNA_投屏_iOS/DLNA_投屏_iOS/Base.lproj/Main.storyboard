@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zVv-1Y-AIs">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Sc3-cm-d0A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAM-1T-LHk">
+                                <rect key="frame" x="50" y="138" width="76" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="上一个"/>
+                                <connections>
+                                    <action selector="upVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RL9-2Z-C6e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jie-O3-8Ur">
+                                <rect key="frame" x="57" y="200" width="62" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="音量-"/>
+                                <connections>
+                                    <action selector="volumeDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zvt-QE-alU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvC-h9-yIO">
+                                <rect key="frame" x="62.5" y="262" width="51" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="播放"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vMP-Nd-vs9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAX-zn-IYV">
+                                <rect key="frame" x="287" y="324" width="78" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="快进5s"/>
+                                <connections>
+                                    <action selector="quickGo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VIP-F0-sKh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SV5-Cc-YOO">
+                                <rect key="frame" x="49" y="324" width="78" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="快退5s"/>
+                                <connections>
+                                    <action selector="quickBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="59J-h6-w86"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUH-0v-qRb">
+                                <rect key="frame" x="300.5" y="262" width="51" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="暂停"/>
+                                <connections>
+                                    <action selector="pause:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jc8-j9-3Jg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8SZ-mX-2b4">
+                                <rect key="frame" x="293" y="200" width="66" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="音量+"/>
+                                <connections>
+                                    <action selector="volumeUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Agx-nX-yWu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9D3-Y0-rcN">
+                                <rect key="frame" x="288" y="138" width="76" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="下一个"/>
+                                <connections>
+                                    <action selector="nextVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GEd-fv-Ua5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCi-23-Me7">
+                                <rect key="frame" x="172" y="405" width="70" height="33"/>
+                                <color key="backgroundColor" red="1" green="0.1843137255" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="搜索设备">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchDevices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8gA-Yn-She"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eoF-iP-JN6"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KCi-23-Me7" firstAttribute="centerX" secondItem="Sc3-cm-d0A" secondAttribute="centerX" id="03O-zY-iy6"/>
+                            <constraint firstItem="8SZ-mX-2b4" firstAttribute="centerY" secondItem="jie-O3-8Ur" secondAttribute="centerY" id="49L-8i-41f"/>
+                            <constraint firstItem="jie-O3-8Ur" firstAttribute="centerX" secondItem="kAM-1T-LHk" secondAttribute="centerX" id="7o6-jQ-Qql"/>
+                            <constraint firstItem="SV5-Cc-YOO" firstAttribute="centerX" secondItem="UvC-h9-yIO" secondAttribute="centerX" id="AwH-uG-MHP"/>
+                            <constraint firstItem="eoF-iP-JN6" firstAttribute="trailing" secondItem="9D3-Y0-rcN" secondAttribute="trailing" constant="50" id="Hsl-lX-fao"/>
+                            <constraint firstItem="KCi-23-Me7" firstAttribute="top" secondItem="SV5-Cc-YOO" secondAttribute="bottom" constant="39" id="Oav-Nn-TOa"/>
+                            <constraint firstItem="kAM-1T-LHk" firstAttribute="leading" secondItem="eoF-iP-JN6" secondAttribute="leading" constant="50" id="QBk-Fx-bxn"/>
+                            <constraint firstItem="8SZ-mX-2b4" firstAttribute="centerX" secondItem="9D3-Y0-rcN" secondAttribute="centerX" id="Sw2-ex-dns"/>
+                            <constraint firstItem="UvC-h9-yIO" firstAttribute="top" secondItem="jie-O3-8Ur" secondAttribute="bottom" constant="20" id="Vtl-cV-J8P"/>
+                            <constraint firstItem="jie-O3-8Ur" firstAttribute="top" secondItem="kAM-1T-LHk" secondAttribute="bottom" constant="20" id="Vx2-fw-ZZQ"/>
+                            <constraint firstItem="UvC-h9-yIO" firstAttribute="centerX" secondItem="jie-O3-8Ur" secondAttribute="centerX" id="ba7-Xa-6pv"/>
+                            <constraint firstItem="nAX-zn-IYV" firstAttribute="centerX" secondItem="mUH-0v-qRb" secondAttribute="centerX" id="eDa-2X-AEs"/>
+                            <constraint firstItem="kAM-1T-LHk" firstAttribute="top" secondItem="eoF-iP-JN6" secondAttribute="top" constant="50" id="gBY-GS-ULh"/>
+                            <constraint firstItem="mUH-0v-qRb" firstAttribute="centerY" secondItem="UvC-h9-yIO" secondAttribute="centerY" id="r4B-lS-kRV"/>
+                            <constraint firstItem="mUH-0v-qRb" firstAttribute="centerX" secondItem="8SZ-mX-2b4" secondAttribute="centerX" id="spx-Vz-MvG"/>
+                            <constraint firstItem="9D3-Y0-rcN" firstAttribute="baseline" secondItem="kAM-1T-LHk" secondAttribute="baseline" id="t1c-bD-ExO"/>
+                            <constraint firstItem="nAX-zn-IYV" firstAttribute="centerY" secondItem="SV5-Cc-YOO" secondAttribute="centerY" id="vjb-yr-rRh"/>
+                            <constraint firstItem="SV5-Cc-YOO" firstAttribute="top" secondItem="UvC-h9-yIO" secondAttribute="bottom" constant="20" id="zwH-6a-yal"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6xY-pE-pIi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="157" y="-303"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XmH-ag-wl3">
+            <objects>
+                <navigationController id="zVv-1Y-AIs" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CJX-Lm-mXX">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Nqw-wf-ltj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UAj-aj-dB2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-620" y="-295"/>
+        </scene>
+    </scenes>
+</document>
