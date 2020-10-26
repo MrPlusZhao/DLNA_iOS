@@ -71,6 +71,7 @@
     self.dlnaManager.device =  self.devicesArr[indexPath.row];
     if (self.connectedDevice) {
         self.connectedDevice();
+        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     }
     NSLog(@"连接设备");
     
