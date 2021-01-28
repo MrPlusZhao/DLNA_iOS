@@ -124,4 +124,8 @@
     CMTime   time = [asset duration];
     return  ceil(time.value/time.timescale);
 }
+- (IBAction)sliderAction:(UISlider*)sender {
+    NSLog(@"%.2f",sender.value);
+    
+}
 @end
